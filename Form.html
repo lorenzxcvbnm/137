@@ -1,26 +1,71 @@
 <!DOCTYPE html>
 <html>
-<body>
 
-<form>
-<p>Registration Form</p>
-First name:<br>
-<input type="text" name="firstname">
-<br>
-Last name:<br>
-<input type="text" name="lastname">
+	<head>
+	</head>
 
-<p>Gender:</p>
-<input type="radio" name="sex" value="male">Male
-<br>
-<input type="radio" name="sex" value="female">Female
-<br>
-<br>
+	<body>
 
-<button type="button" onclick="alert('Thank you for registering!')">Submit</button>
+		<form>
+			<p><b>BAYAG Registration Form</b></p> 	
 
-</form>
+			<!--
+			<input type="text" name="firstname">	
+			<input type="text" name="lastname">
+			-->
+			<br>
+			Username <input type="text" name="username">
+			<br>
 
+			<br>
+			Your password <input type="password" name="psw">
+			<br>
+			Retype password <input type="password" name="rpsw">
+			<br>
 
-</body>
+			<br>
+			Your email address <input type="email" name="email">
+			<br>
+			Retype email address <input type="email" name="remail">
+			<br>
+
+			<br>
+			Name
+			<input type="text" onfocus="if (this.value=='First') this.value = ''" type="text" value="First">
+			<input type="text" onfocus="if (this.value=='Last') this.value = ''" type="text" value="Last">
+			<br>
+
+			<br>
+			Gender
+			<input type="radio" name="sex" value="male">Male
+			<input type="radio" name="sex" value="female">Female
+			<br>
+
+			<br>
+			Birth Date <input type="date" name"Birthday">
+			<br>
+
+			<br>
+			I am
+			<select>
+				 <option value="spiderman">Spiderman</option>
+				 <option value="batman">Batman</option>
+				 <option value="superman">Superman</option>
+				 <option value="ironman">Ironman</option>
+				 <option value="gagamboy">Gagamboy</option>
+			</select>
+			<br>
+
+			<br>
+			<p>Tell us more about yourself</p>
+			<textarea cols="50" rows="5">
+			:)
+			</textarea>
+
+			<br>
+			<button type="button" onclick="alert('Thank you for registering!')">Submit</button>
+		</form>
+
+	</body>
+
 </html>
